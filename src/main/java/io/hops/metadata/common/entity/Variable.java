@@ -33,6 +33,7 @@ public abstract class Variable {
 
     //Named Variables
     BlockID,
+    S3ObjectId,
     INodeID,
     QuotaUpdateID,
     ReplicationIndex,
@@ -135,6 +136,8 @@ public abstract class Variable {
       case GenericArray:
         return new ArrayVariable(varType);
       case BlockID:
+        return new LongVariable(varType);
+      case S3ObjectId:
         return new LongVariable(varType);
       case INodeID:
         return new LongVariable(varType);

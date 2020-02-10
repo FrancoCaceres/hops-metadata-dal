@@ -172,6 +172,34 @@ public class TablesDef {
     String TRUNCATE_BLOCK_GENERATION_STAMP = "truncate_block_generation_stamp";
   }
 
+  public interface S3ObjectInfoTableDef {
+    String TABLE_NAME = "hdfs_s3object_infos";
+    String OBJECT_ID = "object_id";
+    String OBJECT_INDEX = "object_index";
+    String INODE_ID = "inode_id";
+    String REGION = "region";
+    String BUCKET = "bucket";
+    String KEY = "key";
+    String VERSION_ID = "version_id";
+    String NUM_BYTES = "num_bytes";
+    String CHECKSUM = "checksum";
+  }
+
+  public interface S3ObjectLookUpTableDef {
+
+    String TABLE_NAME = "hdfs_s3object_lookup_table";
+    String OBJECT_ID = "object_id";
+    String INODE_ID = "inode_id";
+  }
+
+  public interface S3ObjectChecksumTableDef {
+    String TABLE_NAME = "hdfs_s3object_checksum";
+
+    String INODE_ID = "inode_id";
+    String OBJECT_INDEX = "object_index";
+    String CHECKSUM = "checksum";
+  }
+
   public interface EncodingStatusTableDef {
     String TABLE_NAME = "hdfs_encoding_status";
 
