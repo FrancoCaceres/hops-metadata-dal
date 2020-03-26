@@ -67,7 +67,6 @@ public abstract class Lock implements Comparable<Lock> {
     QuotaUpdate,
     EncodingStatus,
     BlockChecksum,
-    S3ObjectChecksum,
     SubTreePath, 
     Test,
     HashBucket,

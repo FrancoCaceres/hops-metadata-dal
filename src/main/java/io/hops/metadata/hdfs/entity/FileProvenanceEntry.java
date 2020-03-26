@@ -62,6 +62,10 @@ public class FileProvenanceEntry {
     public static FileProvenanceEntry.Operation getBlockLocations() {
       return Operation.ACCESS_DATA;
     }
+
+    public static FileProvenanceEntry.Operation getS3File() {
+      return Operation.ACCESS_DATA;
+    }
     
     public static FileProvenanceEntry.Operation append() {
       return Operation.MODIFY_DATA;

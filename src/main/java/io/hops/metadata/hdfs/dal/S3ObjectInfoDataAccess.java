@@ -20,6 +20,10 @@ public interface S3ObjectInfoDataAccess<T> extends EntityDataAccess {
 
   List<T> findByIds(long[] objectIds, long[] inodeIds) throws StorageException;
 
+  void add(T object) throws StorageException;
+
+  void deleteAll(List<T> objects) throws StorageException;
+
   void prepare(Collection<T> removed, Collection<T> newed,
                Collection<T> modified) throws StorageException;
 }

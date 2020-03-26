@@ -192,12 +192,23 @@ public class TablesDef {
     String INODE_ID = "inode_id";
   }
 
-  public interface S3ObjectChecksumTableDef {
-    String TABLE_NAME = "hdfs_s3object_checksum";
+  public interface S3ObjectDeletableTableDef {
+    String TABLE_NAME = "hdfs_s3object_deletables";
+    String ID = "id";
+    String REGION = "region";
+    String BUCKET = "bucket";
+    String KEY = "key";
+    String VERSION_ID = "version_id";
+    String NUM_BYTES = "num_bytes";
+    String RESCHEDULE_AT = "reschedule_at";
+    String SCHEDULED_FOR = "scheduled_for";
+  }
 
+  public interface S3ProcessableTableDef {
+    String TABLE_NAME = "hdfs_s3processables";
     String INODE_ID = "inode_id";
-    String OBJECT_INDEX = "object_index";
-    String CHECKSUM = "checksum";
+    String RESCHEDULE_AT = "reschedule_at";
+    String SCHEDULED_FOR = "scheduled_for";
   }
 
   public interface EncodingStatusTableDef {
